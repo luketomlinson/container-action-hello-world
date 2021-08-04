@@ -27,6 +27,7 @@ jobs:
       credentials:
         username: ${{ github.actor }}
         password: ${{ secrets.GHCR_TOKEN }}
+      options: --device /dev/bus/usb
     steps: 
       - name: Hello world
         run: echo Hello from the downloaded container
