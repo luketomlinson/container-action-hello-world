@@ -18,6 +18,7 @@ jobs:
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
   my_job:
+    runs-on: ubuntu-latest
     container: ghcr.io/luketomlinson/container-action-hello-world
     steps: 
       - name: Hello world
