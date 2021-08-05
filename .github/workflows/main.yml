@@ -4,6 +4,11 @@ permissions:
   packages: read
 
 jobs:
+  annotation_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Annotation notice stuff
+        run: echo ::notice file=med.txt,line=1,col=2::This is a notice
   hello_world_job:
     runs-on: ubuntu-latest
     name: A job to say hello
